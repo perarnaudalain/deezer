@@ -1,0 +1,915 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6CE2A0F3202B2F9A0078B718 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE2A0F2202B2F9A0078B718 /* Constants.swift */; };
+		A0BA686F84D2849C7C3C505C /* Pods_deezerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 221DD698B5229C9F9B5D5AD4 /* Pods_deezerTests.framework */; };
+		B511D27420261FBD002CFB68 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B511D27320261FBD002CFB68 /* MyCollectionViewCell.swift */; };
+		B511D27520261FBD002CFB68 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B511D27320261FBD002CFB68 /* MyCollectionViewCell.swift */; };
+		B511D27620261FBD002CFB68 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B511D27320261FBD002CFB68 /* MyCollectionViewCell.swift */; };
+		B5356647202E3D710018B4D0 /* FormatUtilTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5356646202E3D710018B4D0 /* FormatUtilTest.swift */; };
+		B5356649202E40AE0018B4D0 /* TrackViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5356648202E40AE0018B4D0 /* TrackViewModel.swift */; };
+		B535664B202E44590018B4D0 /* ParsingJsonPlaylistTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B535664A202E44590018B4D0 /* ParsingJsonPlaylistTest.swift */; };
+		B53917D82032EB4200DC1F3B /* PlaylistServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53917D72032EB4200DC1F3B /* PlaylistServiceProtocol.swift */; };
+		B53917DA2032ED6900DC1F3B /* PlaylistViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53917D92032ED6900DC1F3B /* PlaylistViewModelTest.swift */; };
+		B53917DC2032EDD800DC1F3B /* PlaylistServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53917DB2032EDD800DC1F3B /* PlaylistServiceMock.swift */; };
+		B5398A4B20335BEC0001A40A /* ParsingJsonTrackTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5398A4A20335BEC0001A40A /* ParsingJsonTrackTest.swift */; };
+		B539DCDF2025F37700F0B91D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B539DCDE2025F37700F0B91D /* AppDelegate.swift */; };
+		B539DCE12025F37700F0B91D /* PlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B539DCE02025F37700F0B91D /* PlaylistViewController.swift */; };
+		B539DCE42025F37700F0B91D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B539DCE22025F37700F0B91D /* Main.storyboard */; };
+		B539DCE62025F37700F0B91D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B539DCE52025F37700F0B91D /* Assets.xcassets */; };
+		B539DCE92025F37700F0B91D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B539DCE72025F37700F0B91D /* LaunchScreen.storyboard */; };
+		B539DCFF2025F37700F0B91D /* deezerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B539DCFE2025F37700F0B91D /* deezerUITests.swift */; };
+		B53F7E092026EC7500333E02 /* PlaylistService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53F7E082026EC7500333E02 /* PlaylistService.swift */; };
+		B53F7E0B20275DB400333E02 /* TrackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53F7E0A20275DB400333E02 /* TrackViewController.swift */; };
+		B53F7E0D2027716C00333E02 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53F7E0C2027716C00333E02 /* MyTableViewCell.swift */; };
+		B53F7E0E2027716C00333E02 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53F7E0C2027716C00333E02 /* MyTableViewCell.swift */; };
+		B53F7E0F2027716C00333E02 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53F7E0C2027716C00333E02 /* MyTableViewCell.swift */; };
+		B549936E202BB3BE00196C69 /* NSContraintsLayoutExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B549936D202BB3BE00196C69 /* NSContraintsLayoutExtension.swift */; };
+		B560E0FA2029017800FEEEE2 /* TracklistService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B560E0F92029017700FEEEE2 /* TracklistService.swift */; };
+		B560E0FD202904ED00FEEEE2 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = B560E0FC202904ED00FEEEE2 /* Track.swift */; };
+		B560E0FF2029192F00FEEEE2 /* FormatUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = B560E0FE2029192F00FEEEE2 /* FormatUtil.swift */; };
+		B595069520338B2000A33815 /* TrackViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B595069420338B2000A33815 /* TrackViewModelTest.swift */; };
+		B595069720338B6C00A33815 /* TracklistServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B595069620338B6C00A33815 /* TracklistServiceProtocol.swift */; };
+		B595069920338CF300A33815 /* TrackServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B595069820338CF300A33815 /* TrackServiceMock.swift */; };
+		B597B9AD202CE9E8006973C9 /* noimage.png in Resources */ = {isa = PBXBuildFile; fileRef = B597B9AC202CE9E8006973C9 /* noimage.png */; };
+		B59AC5CA2025F5480003C19E /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59AC5C82025F5480003C19E /* Playlist.swift */; };
+		B59AC5CB2025F5480003C19E /* PlaylistViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59AC5C92025F5480003C19E /* PlaylistViewModel.swift */; };
+		D3E7D423E533BF6741B26651 /* Pods_deezer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE397C217FE180742FCF5A76 /* Pods_deezer.framework */; };
+		D813DB63B4743D081E3D180C /* Pods_deezerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FDFD5D77C268A30478E942F /* Pods_deezerUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B539DCF02025F37700F0B91D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B539DCD32025F37700F0B91D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B539DCDA2025F37700F0B91D;
+			remoteInfo = deezer;
+		};
+		B539DCFB2025F37700F0B91D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B539DCD32025F37700F0B91D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B539DCDA2025F37700F0B91D;
+			remoteInfo = deezer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0D67F42B30655C3B59F78A58 /* Pods-deezerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-deezerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-deezerTests/Pods-deezerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		221DD698B5229C9F9B5D5AD4 /* Pods_deezerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_deezerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FDFD5D77C268A30478E942F /* Pods_deezerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_deezerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D6965C96847B58FF4410814 /* Pods-deezerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-deezerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-deezerTests/Pods-deezerTests.release.xcconfig"; sourceTree = "<group>"; };
+		6CE2A0F2202B2F9A0078B718 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8539AD574A22132DA990C614 /* Pods-deezer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-deezer.release.xcconfig"; path = "Pods/Target Support Files/Pods-deezer/Pods-deezer.release.xcconfig"; sourceTree = "<group>"; };
+		B511D27320261FBD002CFB68 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
+		B5356646202E3D710018B4D0 /* FormatUtilTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatUtilTest.swift; sourceTree = "<group>"; };
+		B5356648202E40AE0018B4D0 /* TrackViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackViewModel.swift; sourceTree = "<group>"; };
+		B535664A202E44590018B4D0 /* ParsingJsonPlaylistTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParsingJsonPlaylistTest.swift; sourceTree = "<group>"; };
+		B53917D72032EB4200DC1F3B /* PlaylistServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistServiceProtocol.swift; sourceTree = "<group>"; };
+		B53917D92032ED6900DC1F3B /* PlaylistViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistViewModelTest.swift; sourceTree = "<group>"; };
+		B53917DB2032EDD800DC1F3B /* PlaylistServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistServiceMock.swift; sourceTree = "<group>"; };
+		B5398A4A20335BEC0001A40A /* ParsingJsonTrackTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParsingJsonTrackTest.swift; sourceTree = "<group>"; };
+		B539DCDB2025F37700F0B91D /* deezer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = deezer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B539DCDE2025F37700F0B91D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B539DCE02025F37700F0B91D /* PlaylistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistViewController.swift; sourceTree = "<group>"; };
+		B539DCE32025F37700F0B91D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B539DCE52025F37700F0B91D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B539DCE82025F37700F0B91D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B539DCEA2025F37700F0B91D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B539DCEF2025F37700F0B91D /* deezerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = deezerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B539DCF52025F37700F0B91D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B539DCFA2025F37700F0B91D /* deezerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = deezerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B539DCFE2025F37700F0B91D /* deezerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = deezerUITests.swift; sourceTree = "<group>"; };
+		B539DD002025F37700F0B91D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B53F7E082026EC7500333E02 /* PlaylistService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistService.swift; sourceTree = "<group>"; };
+		B53F7E0A20275DB400333E02 /* TrackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackViewController.swift; sourceTree = "<group>"; };
+		B53F7E0C2027716C00333E02 /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
+		B549936D202BB3BE00196C69 /* NSContraintsLayoutExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSContraintsLayoutExtension.swift; sourceTree = "<group>"; };
+		B560E0F92029017700FEEEE2 /* TracklistService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TracklistService.swift; sourceTree = "<group>"; };
+		B560E0FC202904ED00FEEEE2 /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		B560E0FE2029192F00FEEEE2 /* FormatUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatUtil.swift; sourceTree = "<group>"; };
+		B595069420338B2000A33815 /* TrackViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackViewModelTest.swift; sourceTree = "<group>"; };
+		B595069620338B6C00A33815 /* TracklistServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracklistServiceProtocol.swift; sourceTree = "<group>"; };
+		B595069820338CF300A33815 /* TrackServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackServiceMock.swift; sourceTree = "<group>"; };
+		B597B9AC202CE9E8006973C9 /* noimage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = noimage.png; path = deezer/Assets/noimage.png; sourceTree = SOURCE_ROOT; };
+		B59AC5C82025F5480003C19E /* Playlist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
+		B59AC5C92025F5480003C19E /* PlaylistViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistViewModel.swift; sourceTree = "<group>"; };
+		C60813C19DC94A45CE101A6E /* Pods-deezer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-deezer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-deezer/Pods-deezer.debug.xcconfig"; sourceTree = "<group>"; };
+		D055371BFD58582F505788BD /* Pods-deezerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-deezerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-deezerUITests/Pods-deezerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DE397C217FE180742FCF5A76 /* Pods_deezer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_deezer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF6E5FFA8AE387DAD2FA940C /* Pods-deezerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-deezerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-deezerUITests/Pods-deezerUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B539DCD82025F37700F0B91D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3E7D423E533BF6741B26651 /* Pods_deezer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B539DCEC2025F37700F0B91D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0BA686F84D2849C7C3C505C /* Pods_deezerTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B539DCF72025F37700F0B91D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D813DB63B4743D081E3D180C /* Pods_deezerUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A480092C8454E28BEF0A3D6F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DE397C217FE180742FCF5A76 /* Pods_deezer.framework */,
+				221DD698B5229C9F9B5D5AD4 /* Pods_deezerTests.framework */,
+				3FDFD5D77C268A30478E942F /* Pods_deezerUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B041CC17561F19D102450E66 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C60813C19DC94A45CE101A6E /* Pods-deezer.debug.xcconfig */,
+				8539AD574A22132DA990C614 /* Pods-deezer.release.xcconfig */,
+				0D67F42B30655C3B59F78A58 /* Pods-deezerTests.debug.xcconfig */,
+				5D6965C96847B58FF4410814 /* Pods-deezerTests.release.xcconfig */,
+				D055371BFD58582F505788BD /* Pods-deezerUITests.debug.xcconfig */,
+				FF6E5FFA8AE387DAD2FA940C /* Pods-deezerUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B539DCD22025F37700F0B91D = {
+			isa = PBXGroup;
+			children = (
+				B539DCDD2025F37700F0B91D /* deezer */,
+				B539DCF22025F37700F0B91D /* deezerTests */,
+				B539DCFD2025F37700F0B91D /* deezerUITests */,
+				B539DCDC2025F37700F0B91D /* Products */,
+				B041CC17561F19D102450E66 /* Pods */,
+				A480092C8454E28BEF0A3D6F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B539DCDC2025F37700F0B91D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B539DCDB2025F37700F0B91D /* deezer.app */,
+				B539DCEF2025F37700F0B91D /* deezerTests.xctest */,
+				B539DCFA2025F37700F0B91D /* deezerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B539DCDD2025F37700F0B91D /* deezer */ = {
+			isa = PBXGroup;
+			children = (
+				B597B9AB202CE9DA006973C9 /* Assets */,
+				B560E0FB2029019900FEEEE2 /* Util */,
+				B53F7E072026E75400333E02 /* Service */,
+				B53F7E052026DFE600333E02 /* ViewModel */,
+				B53F7E042026DFDA00333E02 /* View */,
+				B53F7E032026DFBD00333E02 /* Model */,
+				B539DCDE2025F37700F0B91D /* AppDelegate.swift */,
+				B539DCE22025F37700F0B91D /* Main.storyboard */,
+				B539DCE52025F37700F0B91D /* Assets.xcassets */,
+				B539DCE72025F37700F0B91D /* LaunchScreen.storyboard */,
+				B539DCEA2025F37700F0B91D /* Info.plist */,
+				6CE2A0F2202B2F9A0078B718 /* Constants.swift */,
+			);
+			path = deezer;
+			sourceTree = "<group>";
+		};
+		B539DCF22025F37700F0B91D /* deezerTests */ = {
+			isa = PBXGroup;
+			children = (
+				B539DCF52025F37700F0B91D /* Info.plist */,
+				B5356646202E3D710018B4D0 /* FormatUtilTest.swift */,
+				B535664A202E44590018B4D0 /* ParsingJsonPlaylistTest.swift */,
+				B5398A4A20335BEC0001A40A /* ParsingJsonTrackTest.swift */,
+				B53917D92032ED6900DC1F3B /* PlaylistViewModelTest.swift */,
+				B53917DB2032EDD800DC1F3B /* PlaylistServiceMock.swift */,
+				B595069420338B2000A33815 /* TrackViewModelTest.swift */,
+				B595069820338CF300A33815 /* TrackServiceMock.swift */,
+			);
+			path = deezerTests;
+			sourceTree = "<group>";
+		};
+		B539DCFD2025F37700F0B91D /* deezerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B539DCFE2025F37700F0B91D /* deezerUITests.swift */,
+				B539DD002025F37700F0B91D /* Info.plist */,
+			);
+			path = deezerUITests;
+			sourceTree = "<group>";
+		};
+		B53F7E032026DFBD00333E02 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B59AC5C82025F5480003C19E /* Playlist.swift */,
+				B560E0FC202904ED00FEEEE2 /* Track.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B53F7E042026DFDA00333E02 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B53F7E062026DFF900333E02 /* Widget */,
+				B539DCE02025F37700F0B91D /* PlaylistViewController.swift */,
+				B53F7E0A20275DB400333E02 /* TrackViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B53F7E052026DFE600333E02 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B59AC5C92025F5480003C19E /* PlaylistViewModel.swift */,
+				B5356648202E40AE0018B4D0 /* TrackViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B53F7E062026DFF900333E02 /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+				B511D27320261FBD002CFB68 /* MyCollectionViewCell.swift */,
+				B53F7E0C2027716C00333E02 /* MyTableViewCell.swift */,
+				B549936D202BB3BE00196C69 /* NSContraintsLayoutExtension.swift */,
+			);
+			path = Widget;
+			sourceTree = "<group>";
+		};
+		B53F7E072026E75400333E02 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				B53F7E082026EC7500333E02 /* PlaylistService.swift */,
+				B53917D72032EB4200DC1F3B /* PlaylistServiceProtocol.swift */,
+				B560E0F92029017700FEEEE2 /* TracklistService.swift */,
+				B595069620338B6C00A33815 /* TracklistServiceProtocol.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		B560E0FB2029019900FEEEE2 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				B560E0FE2029192F00FEEEE2 /* FormatUtil.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		B597B9AB202CE9DA006973C9 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				B597B9AC202CE9E8006973C9 /* noimage.png */,
+			);
+			name = Assets;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B539DCDA2025F37700F0B91D /* deezer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B539DD032025F37700F0B91D /* Build configuration list for PBXNativeTarget "deezer" */;
+			buildPhases = (
+				639306F182290410EA73387B /* [CP] Check Pods Manifest.lock */,
+				B539DCD72025F37700F0B91D /* Sources */,
+				B539DCD82025F37700F0B91D /* Frameworks */,
+				B539DCD92025F37700F0B91D /* Resources */,
+				B7D88F5828774C4B457EBEC5 /* [CP] Embed Pods Frameworks */,
+				E2A18DD0E45F204BBA1EEF4A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = deezer;
+			productName = deezer;
+			productReference = B539DCDB2025F37700F0B91D /* deezer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B539DCEE2025F37700F0B91D /* deezerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B539DD062025F37700F0B91D /* Build configuration list for PBXNativeTarget "deezerTests" */;
+			buildPhases = (
+				2C030A3721417F377AF7FABE /* [CP] Check Pods Manifest.lock */,
+				B539DCEB2025F37700F0B91D /* Sources */,
+				B539DCEC2025F37700F0B91D /* Frameworks */,
+				B539DCED2025F37700F0B91D /* Resources */,
+				050EA0E6E27AF8311E4F5092 /* [CP] Embed Pods Frameworks */,
+				5E4022D7892E7E831CBA6E02 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B539DCF12025F37700F0B91D /* PBXTargetDependency */,
+			);
+			name = deezerTests;
+			productName = deezerTests;
+			productReference = B539DCEF2025F37700F0B91D /* deezerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B539DCF92025F37700F0B91D /* deezerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B539DD092025F37700F0B91D /* Build configuration list for PBXNativeTarget "deezerUITests" */;
+			buildPhases = (
+				AC187D2D717E5078AE8073A1 /* [CP] Check Pods Manifest.lock */,
+				B539DCF62025F37700F0B91D /* Sources */,
+				B539DCF72025F37700F0B91D /* Frameworks */,
+				B539DCF82025F37700F0B91D /* Resources */,
+				F5A5C2F92F7E1C7C9AEFA026 /* [CP] Embed Pods Frameworks */,
+				B7B279D10F46B939F6E9FC1F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B539DCFC2025F37700F0B91D /* PBXTargetDependency */,
+			);
+			name = deezerUITests;
+			productName = deezerUITests;
+			productReference = B539DCFA2025F37700F0B91D /* deezerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B539DCD32025F37700F0B91D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Alain PERARNAUD";
+				TargetAttributes = {
+					B539DCDA2025F37700F0B91D = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					B539DCEE2025F37700F0B91D = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B539DCDA2025F37700F0B91D;
+					};
+					B539DCF92025F37700F0B91D = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B539DCDA2025F37700F0B91D;
+					};
+				};
+			};
+			buildConfigurationList = B539DCD62025F37700F0B91D /* Build configuration list for PBXProject "deezer" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B539DCD22025F37700F0B91D;
+			productRefGroup = B539DCDC2025F37700F0B91D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B539DCDA2025F37700F0B91D /* deezer */,
+				B539DCEE2025F37700F0B91D /* deezerTests */,
+				B539DCF92025F37700F0B91D /* deezerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B539DCD92025F37700F0B91D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B539DCE92025F37700F0B91D /* LaunchScreen.storyboard in Resources */,
+				B539DCE62025F37700F0B91D /* Assets.xcassets in Resources */,
+				B597B9AD202CE9E8006973C9 /* noimage.png in Resources */,
+				B539DCE42025F37700F0B91D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B539DCED2025F37700F0B91D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B539DCF82025F37700F0B91D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		050EA0E6E27AF8311E4F5092 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-deezerTests/Pods-deezerTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2C030A3721417F377AF7FABE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-deezerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E4022D7892E7E831CBA6E02 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-deezerTests/Pods-deezerTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		639306F182290410EA73387B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-deezer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC187D2D717E5078AE8073A1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-deezerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B7B279D10F46B939F6E9FC1F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-deezerUITests/Pods-deezerUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B7D88F5828774C4B457EBEC5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-deezer/Pods-deezer-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-deezer/Pods-deezer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2A18DD0E45F204BBA1EEF4A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-deezer/Pods-deezer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5A5C2F92F7E1C7C9AEFA026 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-deezerUITests/Pods-deezerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B539DCD72025F37700F0B91D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B560E0FD202904ED00FEEEE2 /* Track.swift in Sources */,
+				B59AC5CB2025F5480003C19E /* PlaylistViewModel.swift in Sources */,
+				B53F7E0D2027716C00333E02 /* MyTableViewCell.swift in Sources */,
+				B53F7E092026EC7500333E02 /* PlaylistService.swift in Sources */,
+				B53F7E0B20275DB400333E02 /* TrackViewController.swift in Sources */,
+				B511D27420261FBD002CFB68 /* MyCollectionViewCell.swift in Sources */,
+				B5356649202E40AE0018B4D0 /* TrackViewModel.swift in Sources */,
+				6CE2A0F3202B2F9A0078B718 /* Constants.swift in Sources */,
+				B539DCE12025F37700F0B91D /* PlaylistViewController.swift in Sources */,
+				B539DCDF2025F37700F0B91D /* AppDelegate.swift in Sources */,
+				B59AC5CA2025F5480003C19E /* Playlist.swift in Sources */,
+				B549936E202BB3BE00196C69 /* NSContraintsLayoutExtension.swift in Sources */,
+				B560E0FF2029192F00FEEEE2 /* FormatUtil.swift in Sources */,
+				B595069720338B6C00A33815 /* TracklistServiceProtocol.swift in Sources */,
+				B560E0FA2029017800FEEEE2 /* TracklistService.swift in Sources */,
+				B53917D82032EB4200DC1F3B /* PlaylistServiceProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B539DCEB2025F37700F0B91D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B535664B202E44590018B4D0 /* ParsingJsonPlaylistTest.swift in Sources */,
+				B511D27520261FBD002CFB68 /* MyCollectionViewCell.swift in Sources */,
+				B5356647202E3D710018B4D0 /* FormatUtilTest.swift in Sources */,
+				B595069920338CF300A33815 /* TrackServiceMock.swift in Sources */,
+				B53917DC2032EDD800DC1F3B /* PlaylistServiceMock.swift in Sources */,
+				B595069520338B2000A33815 /* TrackViewModelTest.swift in Sources */,
+				B5398A4B20335BEC0001A40A /* ParsingJsonTrackTest.swift in Sources */,
+				B53917DA2032ED6900DC1F3B /* PlaylistViewModelTest.swift in Sources */,
+				B53F7E0E2027716C00333E02 /* MyTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B539DCF62025F37700F0B91D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B511D27620261FBD002CFB68 /* MyCollectionViewCell.swift in Sources */,
+				B539DCFF2025F37700F0B91D /* deezerUITests.swift in Sources */,
+				B53F7E0F2027716C00333E02 /* MyTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B539DCF12025F37700F0B91D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B539DCDA2025F37700F0B91D /* deezer */;
+			targetProxy = B539DCF02025F37700F0B91D /* PBXContainerItemProxy */;
+		};
+		B539DCFC2025F37700F0B91D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B539DCDA2025F37700F0B91D /* deezer */;
+			targetProxy = B539DCFB2025F37700F0B91D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B539DCE22025F37700F0B91D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B539DCE32025F37700F0B91D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B539DCE72025F37700F0B91D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B539DCE82025F37700F0B91D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B539DD012025F37700F0B91D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B539DD022025F37700F0B91D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B539DD042025F37700F0B91D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C60813C19DC94A45CE101A6E /* Pods-deezer.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = deezer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sqli.bdx.steering.deezer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B539DD052025F37700F0B91D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8539AD574A22132DA990C614 /* Pods-deezer.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = deezer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sqli.bdx.steering.deezer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B539DD072025F37700F0B91D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D67F42B30655C3B59F78A58 /* Pods-deezerTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = deezerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sqli.bdx.steering.deezerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/deezer.app/deezer";
+			};
+			name = Debug;
+		};
+		B539DD082025F37700F0B91D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D6965C96847B58FF4410814 /* Pods-deezerTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = deezerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sqli.bdx.steering.deezerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/deezer.app/deezer";
+			};
+			name = Release;
+		};
+		B539DD0A2025F37700F0B91D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D055371BFD58582F505788BD /* Pods-deezerUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = deezerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sqli.bdx.steering.deezerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = deezer;
+			};
+			name = Debug;
+		};
+		B539DD0B2025F37700F0B91D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF6E5FFA8AE387DAD2FA940C /* Pods-deezerUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = deezerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sqli.bdx.steering.deezerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = deezer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B539DCD62025F37700F0B91D /* Build configuration list for PBXProject "deezer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B539DD012025F37700F0B91D /* Debug */,
+				B539DD022025F37700F0B91D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B539DD032025F37700F0B91D /* Build configuration list for PBXNativeTarget "deezer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B539DD042025F37700F0B91D /* Debug */,
+				B539DD052025F37700F0B91D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B539DD062025F37700F0B91D /* Build configuration list for PBXNativeTarget "deezerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B539DD072025F37700F0B91D /* Debug */,
+				B539DD082025F37700F0B91D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B539DD092025F37700F0B91D /* Build configuration list for PBXNativeTarget "deezerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B539DD0A2025F37700F0B91D /* Debug */,
+				B539DD0B2025F37700F0B91D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B539DCD32025F37700F0B91D /* Project object */;
+}
